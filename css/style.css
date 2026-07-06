@@ -2,6 +2,8 @@ body,
 html {
     font-family: "Roboto", "Noto Sans JP", sans-serif;
     scroll-behavior: smooth;
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
 }
 
 /* header */
@@ -11,7 +13,6 @@ header {
     width: 100%;
     height: 70px;
     align-items: center;
-    background-color: white;
 }
 
 .title {
@@ -21,20 +22,26 @@ header {
 }
 
 .nav-container {
-    display: flex;
-    width: 100%;
+    position: absolute;
+    right: 12%;
+    top: 15%;
+    z-index: 2;
 }
+
 
 .nav-list {
     display: flex;
-    width: 100%;
-    justify-content: end;
-    margin-inline: 30px;
+    flex-direction: column;
     gap: 15px;
+    text-align: right;
+    font-family: "Gravitas One", serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
-nav li :hover {
+.nav-list a:hover {
     text-decoration: underline;
+    text-decoration-thickness: 1px;
     cursor: pointer;
 }
 
@@ -48,6 +55,19 @@ nav li :hover {
     align-items: center;
 }
 
+.firstview-border {
+    color: white;
+    position: relative;
+    border: 1.5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+}
+
 .firstview-container .text-box {
     display: flex;
     flex-direction: column;
@@ -58,7 +78,14 @@ nav li :hover {
 
 .firstview-container .typewriter {
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 300;
+    user-select: none;
+    font-family: "Inconsolata";
+}
+
+.firstview-container .scramble {
+    font-size: 15px;
+    font-weight: 300;
     user-select: none;
     font-family: "Inconsolata";
 }
@@ -78,7 +105,7 @@ nav li :hover {
 .firstview-container .cursor {
     font-size: 50px;
     font-weight: bold;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 25px;
     height: 50px;
     animation: blink 1s step-start 1.5s infinite;
@@ -91,7 +118,6 @@ nav li :hover {
 
 .firstview-container .down {
     font-size: 30px;
-    color: black;
     cursor: pointer;
     user-select: none;
 }
@@ -112,9 +138,11 @@ nav li :hover {
 }
 
 .about-container h2 {
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 400;
     margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: 550px;
 }
 
 .profile-box {
@@ -317,4 +345,48 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+}
+
+html.glitch {
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+html.glitch .enter-button {
+    filter: drop-shadow(0.06rem 0 0.06rem #ea36af) drop-shadow(-0.125rem 0 0.06rem #75fa69);
+    animation-duration: 0.01s;
+    animation-name: svgflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+html.glitch .firstview-container .cursor {
+    filter: drop-shadow(0.06rem 0 0.06rem #ea36af) drop-shadow(-0.125rem 0 0.06rem #75fa69);
+    animation-duration: 0.01s;
+    animation-name: svgflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes svgflicker {
+    from {
+        filter: drop-shadow(1px 0 0 #ea36af) drop-shadow(-2px 0 0.0 #75fa69);
+    }
+
+    to {
+        filter: drop-shadow(2px 0.5px 2px #ea36af) drop-shadow(-1px -0.5px 2px #75fa69);
+    }
+}
+
+@keyframes textflicker {
+    from {
+        text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+
+    to {
+        text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
 }

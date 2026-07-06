@@ -17,6 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -25,31 +29,34 @@
 
     <header>
         <div class="title">Toufuuuuuu | Student Developer</div>
-        <nav class="nav-container">
-            <ul class="nav-list">
-                <li><a onclick="document.getElementById('about').scrollIntoView()">about</a></li>
-                <li><a onclick="document.getElementById('works').scrollIntoView()">works</a></li>
-                <li><a onclick="document.getElementById('connect').scrollIntoView()">connect</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <!-- First View -->
         <div class="firstview-container">
-            <div class="text-box">
-                <div class="maintext">
-                    <h1 class="typewriter"></h1>
-                    <span class="cursor"></span>
+            <nav class="nav-container">
+                <ul class="nav-list">
+                    <li><a onclick="document.getElementById('about').scrollIntoView()">About</a></li>
+                    <li><a onclick="document.getElementById('works').scrollIntoView()">Works</a></li>
+                    <li><a onclick="document.getElementById('connect').scrollIntoView()">Connect</a></li>
+                </ul>
+            </nav>
+            <div class="firstview-border">
+                <div class="text-box">
+                    <div class="maintext">
+                        <h1 class="typewriter"></h1>
+                        <span class="cursor"></span>
+                    </div>
+                    <h2 class="scramble"></h2>
                 </div>
-                <h2 class="scramble"></h2>
+                <a class="enter-button"><img src="assets/svg/arrow_left.svg" alt="" class="down" width="32"
+                        height="32"></a>
             </div>
-            <a onclick="document.getElementById('about').scrollIntoView()"><img src="assets/svg/arrow_left.svg" alt=""
-                    class="down" width="32" height="32"></a>
             <div id="about" class="nav-about"></div>
         </div>
 
         <!-- About -->
+        <!--
         <div class="about-container">
             <h2>About</h2>
             <div class="profile-box">
@@ -61,8 +68,10 @@
             </div>
             <div id="works" class="nav-works"></div>
         </div>
+        -->
 
         <!-- Works -->
+        <!--
         <div class="works-container">
             <h2>Works</h2>
             <div class="works-box">
@@ -70,8 +79,10 @@
                 <button class="works-button-2">Visual Arts</button>
             </div>
         </div>
+        -->
 
         <!-- Contact -->
+        <!--
         <div class="connect-container">
             <div id="connect"></div>
             <h2>Connect</h2>
@@ -82,6 +93,7 @@
                         src="assets/social_logo/GitHub_Invertocat_Black.svg" alt="" class="icon"></a>
             </div>
         </div>
+        -->
     </main>
 
     <footer>
@@ -92,6 +104,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="./js/glitch.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
