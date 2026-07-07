@@ -2,8 +2,13 @@ body,
 html {
     font-family: "Roboto", "Noto Sans JP", sans-serif;
     scroll-behavior: smooth;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+}
+
+.underline {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+    text-decoration: none;
 }
 
 /* header */
@@ -55,18 +60,15 @@ header {
     align-items: center;
 }
 
-.firstview-border {
-    color: white;
+/* .firstview-border {
     position: relative;
-    border: 1.5px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
     height: 80%;
-    background-color: rgb(0, 0, 0);
-}
+}*/
 
 .firstview-container .text-box {
     display: flex;
@@ -98,14 +100,14 @@ header {
     }
 
     50% {
-        opacity: 0;
+        opacity: 0.05;
     }
 }
 
 .firstview-container .cursor {
     font-size: 50px;
     font-weight: bold;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     width: 25px;
     height: 50px;
     animation: blink 1s step-start 1.5s infinite;
@@ -128,21 +130,24 @@ header {
     margin-top: 600px;
 }
 
-.about-container {
+.about-container,
+.about2,
+.works-container {
     display: flex;
-    width: 100%;
+    width: 700px;
+    max-width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50vh;
+    margin: 0 auto 20vh;
 }
 
 .about-container h2 {
     font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 100px;
-    margin-right: auto;
-    margin-left: 550px;
+    font-weight: 300;
+    margin: 0 0 100px;
+    text-align: left;
+    width: 100%;
 }
 
 .profile-box {
@@ -161,12 +166,51 @@ header {
     flex-direction: column;
     gap: 10px;
     line-height: 2;
+    font-size: 15px;
 }
 
 .profile-text .name {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
     font-family: "Inconsolata";
+}
+
+/* Experience */
+.about2 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto 20vh;
+}
+
+.exp-container {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.exp-container h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 0 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.exp-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 2;
 }
 
 /* Works */
@@ -177,25 +221,29 @@ header {
 
 .works-container {
     display: flex;
-    width: 100%;
+    width: 700px;
+    max-width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto 20vh;
 }
 
 .works-container h2 {
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 100px;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0 0 100px;
+    text-align: left;
+    width: 100%;
 }
 
 .works-box {
-    max-width: 500px;
-    width: 500px;
+    max-width: 100%;
+    width: 100%;
     height: 200px;
     display: flex;
     justify-content: center;
-    margin-bottom: 50vh;
+    margin-bottom: 10vh;
 }
 
 .works-button,
@@ -205,7 +253,8 @@ header {
     background-color: black;
     color: white;
     text-align: center;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-out;
+    font-size: 15px;
 }
 
 .works-button-2 {
@@ -221,28 +270,34 @@ header {
 /* Connect */
 .connect-container {
     display: flex;
-    width: 100%;
+    width: 700px;
+    max-width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50vh;
+    margin: 0 auto 20vh;
 }
 
 .connect-container h2 {
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 100px;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0 0 100px;
+    text-align: left;
+    width: 100%;
 }
 
 .connect-icons {
     display: flex;
     gap: 50px;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 .connect-icons .icon {
     width: 30px;
     height: 30px;
     user-select: none;
+    margin-left: 10px;
 }
 
 footer {
@@ -347,6 +402,16 @@ footer {
     font-variation-settings: "wdth" 100;
 }
 
+/*
+Copyright (c) 2026 by Patrick H. Lauke (https://codepen.io/patrickhlauke/pen/YaoBop)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
 html.glitch {
     text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
     animation-duration: 0.01s;
@@ -390,3 +455,45 @@ html.glitch .firstview-container .cursor {
         text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
     }
 }
+
+/* レスポンシブ対応 */
+
+/*一応タブレット*/
+@media screen and (max-width: 850px) {
+
+    .about-container,
+    .about2,
+    .works-container,
+    .connect-container {
+        width: 50%;
+    }
+
+    .about-container h2,
+    .about2 h2,
+    .works-container h2,
+    .connect-container h2 {
+        text-align: center;
+    }
+
+    .profile-box {
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .about2 {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .connect-icons {
+    justify-content: center;
+    }
+
+    .connect-icons .icon {
+    margin-left: 0px;
+}
+}
+
+/*スマホ*/
+@media screen and (max-width: 480px) {}

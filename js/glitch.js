@@ -1,5 +1,8 @@
 const button = document.querySelector(".enter-button");
 const cursor = document.querySelector(".cursor");
+const scrollElement = document.getElementById('about');
+const target = scrollElement.getBoundingClientRect();
+const targetTop = target.top + window.pageYOffset;
 gsap.registerPlugin(ScrambleTextPlugin)
 
 if (button) {
@@ -7,8 +10,15 @@ if (button) {
         document.documentElement.classList.add("glitch");
 
         setTimeout(() => {
+            window.scrollTo({
+                top: targetTop,
+                behavior: 'smooth'
+            });
+        }, 2000);
+
+        setTimeout(() => {
             document.documentElement.classList.remove("glitch");
-        }, 300000);
+        }, 2000);
 
         setTimeout(() => {
             cursor.style.animation = "blink 1s step-start infinite";

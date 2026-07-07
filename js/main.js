@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrambleTextPlugin)
 gsap.to(".scramble", {
   duration: 1.5, 
   scrambleText: {
-    text: "Dev / Visual Arts",
+    text: "Please click the arrow below.",
   }
 });
 

@@ -34,44 +34,56 @@
     <main>
         <!-- First View -->
         <div class="firstview-container">
-            <nav class="nav-container">
-                <ul class="nav-list">
-                    <li><a onclick="document.getElementById('about').scrollIntoView()">About</a></li>
-                    <li><a onclick="document.getElementById('works').scrollIntoView()">Works</a></li>
-                    <li><a onclick="document.getElementById('connect').scrollIntoView()">Connect</a></li>
-                </ul>
-            </nav>
-            <div class="firstview-border">
-                <div class="text-box">
-                    <div class="maintext">
-                        <h1 class="typewriter"></h1>
-                        <span class="cursor"></span>
-                    </div>
-                    <h2 class="scramble"></h2>
+            <div class="text-box">
+                <div class="maintext">
+                    <h1 class="typewriter"></h1>
+                    <span class="cursor"></span>
                 </div>
-                <a class="enter-button"><img src="assets/svg/arrow_left.svg" alt="" class="down" width="32"
-                        height="32"></a>
+                <h2 class="scramble"></h2>
             </div>
+            <a class="enter-button"><img src="assets/svg/arrow_left.svg" alt="" class="down" width="32" height="32"></a>
             <div id="about" class="nav-about"></div>
         </div>
 
         <!-- About -->
-        <!--
+
         <div class="about-container">
-            <h2>About</h2>
+            <h2 id="about">About</h2>
             <div class="profile-box">
-                <img src="assets/image/icon.png" alt="" class="profile-icon">
+                <img src="assets/image/icon2.png" alt="" class="profile-icon">
                 <div class="profile-text">
                     <div class="name">Toufuuuuuu</div>
-                    <div>ただの学生。<br>幅広い技術の習得を目指して活動しています。<br>リミナルスペース大好き。</div>
+                    <div>デザインがしたい、ただの学生。<br>幅広い技術を持ったクリエイターを目指して活動しています。<br>リミナルスペース大好き。</div>
                 </div>
             </div>
             <div id="works" class="nav-works"></div>
         </div>
-        -->
+
+        <div class="about2">
+            <div class="exp-container">
+                <h2>Experience</h2>
+                <div class="exp-text">
+                    <div>[2026/06/01] <a href="https://sechack365.nict.go.jp/" target="_blank" class="underline">SecHack365'26</a></div>
+                    <div>[2026/04/29] <a href="https://sushitech-startup.metro.tokyo.lg.jp/" target="_blank" class="underline">SusHi Tech Tokyo 2026</a> 行った</div>
+                    <div>[2026/05/03] <a href="https://tokyogamedungeon.com/" target="_blank" class="underline">東京ゲームダンジョン12</a> 行った</div>
+                    <div>[2024/08/06] <a href="https://www.instagram.com/p/C-XYGo5zZ71/?utm_source=ig_web_button_share_sheet" target="_blank" class="underline">ゲーム制作体験イベント開催</a></div>
+                    <div>[n.d.] 映像制作やシステム開発、講師など</div>
+                </div>
+            </div>
+            <div class="exp-container">
+                <h2>Skills</h2>
+                <div class="exp-text">
+                    <div>Adobe Premiere Pro</div>
+                    <div>HTML / CSS / JS</div>
+                    <div>Unreal Engine 5</div>
+                    <div>Unity / C#</div>
+                    <div>etc... (See more details and projects in Works.)</div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Works -->
-        <!--
         <div class="works-container">
             <h2>Works</h2>
             <div class="works-box">
@@ -79,10 +91,8 @@
                 <button class="works-button-2">Visual Arts</button>
             </div>
         </div>
-        -->
 
         <!-- Contact -->
-        <!--
         <div class="connect-container">
             <div id="connect"></div>
             <h2>Connect</h2>
@@ -93,7 +103,6 @@
                         src="assets/social_logo/GitHub_Invertocat_Black.svg" alt="" class="icon"></a>
             </div>
         </div>
-        -->
     </main>
 
     <footer>
