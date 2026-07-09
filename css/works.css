@@ -1,0 +1,128 @@
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.works-title {
+    height: 100%;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.title-container h1 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.title-container h2 {
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 100px;
+    justify-content: start;
+    align-items: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+.software-items {
+    display: flex;
+    gap: 30px;
+}
+
+.software-items span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.software-items h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.software-items p {
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.software-items .tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.software-items .tag {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border: 1.5px solid;
+    font-size: 13px;
+    margin-top: 10px;
+    color: rgb(104, 104, 104);
+}
+
+.works-image {
+    width: 320px;
+    height: 180px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 1180px) {
+    .software-items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .title-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .works-title {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .gallery-container {
+        padding-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .software-items {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .software-items span {
+        text-align: center;
+    }
+
+    .software-items .tags {
+        justify-content: center;
+    }
+
+    .works-image {
+        width: 280px;
+        height: 158px;
+    }
+}
+
+/* lity で表示される画像コンテナの最大幅を制限する */
+.lity-container {
+    width: 80vh;
+}

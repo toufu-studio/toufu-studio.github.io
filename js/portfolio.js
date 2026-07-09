@@ -1,3 +1,5 @@
+
+
 gsap.registerPlugin(ScrambleTextPlugin) 
 
 gsap.to(".scramble", {
@@ -10,6 +12,13 @@ gsap.to(".scramble", {
 gsap.to(".scramble2", {
   duration: 1.5, 
   scrambleText: {
-    text: "Software",
+    text: "Development",
+  }
+});
+
+gsap.to(".scramble3", {
+  duration: 1.5, 
+  scrambleText: {
+    text: "Design",
   }
 });

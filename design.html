@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no,email=no,address=no">
     <link rel="canonical" href="./index.html">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="assets/image/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +19,22 @@
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/works.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/lity@2.4.1/dist/lity.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lity@2.4.1/dist/lity.js"></script>
 </head>
 
 <body>
 
     <header>
-        <div class="title">Toufuuuuuu | Student Developer</div>
+        <div class="title"><a href="index.html"> Toufuuuuuu | Student Developer</a></div>
         <nav class="nav-container">
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a onclick="document.getElementById('works').scrollIntoView()">Software</a></li>
-                <li><a onclick="document.getElementById('connect').scrollIntoView()">Visual Art</a></li>
+                <li><a href="development.html">Development</a></li>
+                <li><a href="design.html">Design</a></li>
             </ul>
         </nav>
     </header>
@@ -39,24 +44,35 @@
         <div class="title-container">
             <div class="works-title">
                 <h1 class="scramble">Portfolio</h1>
-                <h2 class="scramble2">Software</h2>
+                <h2 class="scramble3">Design</h2>
             </div>
         </div>
         <div class="gallery-container">
             <div class="software-items">
-                <img src="assets/image/works/1.png" alt="" class="works-image">
+                <a href="https://youtu.be/CQOLHmfLFzA" data-lity><img src="assets/image/design/1.jpg" alt=""
+                        class="works-image"></a>
                 <span>
-                    <h3>KOTATSU</h3>
-                    <p>掲示板風SNS。1時間毎に行われるトピックの入れ替えや、ランダムで表示される「今日の投稿」など、<br>オープン型SNSでありながらリアルタイム性と小さな繋がりが両立できるよう意識した機能を多数実装。
+                    <h3>自作ホラーゲームのディザー映像</h3>
+                    <p>正直、今見ると少しダサい件。（特に文言が）<br>一部気に入っている演出はあります。
                     </p>
                     <div class="tags">
-                        <div class="tag">Next.js</div>
-                        <div class="tag">TypeScript</div>
-                        <div class="tag">React</div>
-                        <div class="tag">Tailwind CSS</div>
-                        <div class="tag">Node.js</div>
-                        <div class="tag">Supabase</div>
-                        <div class="tag">Vercel</div>
+                        <div class="tag">Adobe Premiere Pro</div>
+                        <div class="tag">Unity</div>
+                        <div class="tag">Blender</div>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="gallery-container">
+            <div class="software-items">
+                <img src="assets/image/design/2.png" alt="" class="works-image">
+                <span>
+                    <h3>ご依頼していただいた映像</h3>
+                    <p>公開できるものは少ないですが、ご依頼を頂いて制作したりもしています。<br>画像はちょっと昔。
+                    </p>
+                    <div class="tags">
+                        <div class="tag">Adobe Premiere Pro</div>
+                        <div class="tag">Lumix GH4</div>
                     </div>
                 </span>
             </div>
