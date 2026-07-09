@@ -27,6 +27,13 @@ header {
 .title {
     margin-inline: 30px;
     font-weight: bold;
+    display: block;
+}
+
+.title2 {
+    margin-inline: 30px;
+    font-weight: bold;
+    display: none;
 }
 
 .nav-container {
@@ -420,4 +427,17 @@ html.glitch .firstview-container .cursor {
 }
 
 /*スマホ*/
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 520px) {
+
+.title {
+    margin-inline: 30px;
+    font-weight: bold;
+    display: none;
+}
+
+.title2 {
+    margin-inline: 30px;
+    font-weight: bold;
+    display: block;
+}
+}
